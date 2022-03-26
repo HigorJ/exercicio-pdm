@@ -10,12 +10,12 @@ const App = () => {
     
     const textoDoRotulo = 'Nome:';
 
-    const obterTextoDoBotao =() => textoDoRotulo;
+    const obterTextoDoBotao =() => "Enviar";
 
     return (
         <div className="div-principal">
             <label htmlFor="nome" style={{ display: 'block', marginBottom: 4 }}>
-                { obterTextoDoBotao() }
+                { textoDoRotulo }
             </label>
             <input 
                 id="nome" 
@@ -23,7 +23,7 @@ const App = () => {
                     outline: 'none', width: '100%', borderRadius: 8, boxSizing: 'border-box' }} />
         
             <button style={estiloBotao}>
-                    Enviar
+                    { obterTextoDoBotao() }
             </button>
         </div>
     )
