@@ -1,22 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './styles.css';
 
 const App = () => {
+    const estiloBotao = { marginTop: 12, paddingTop: 8, paddingBottom: 8, 
+        backgroundColor: 'blueviolet', color: 'white', border: 'none', 
+        borderRadius: 8, width: '100%', cursor: 'pointer' }
+    
+    const textoDoRotulo = 'Nome:';
+
+    const obterTextoDoBotao =() => textoDoRotulo;
+
     return (
-        <div style={{ margin: 'auto', width: 768, backgroundColor: '#EEE', 
-        padding: 12, borderRadius: 8 }}>
+        <div className="div-principal">
             <label htmlFor="nome" style={{ display: 'block', marginBottom: 4 }}>
-                Nome:
+                { obterTextoDoBotao() }
             </label>
             <input 
                 id="nome" 
                 style={{ paddingTop: 8, paddingBottom: 8, borderStyle: 'hidden', 
                     outline: 'none', width: '100%', borderRadius: 8, boxSizing: 'border-box' }} />
         
-            <button style={{ marginTop: 12, paddingTop: 8, paddingBottom: 8, 
-                backgroundColor: 'blueviolet', color: 'white', border: 'none', 
-                borderRadius: 8, width: '100%', cursor: 'pointer' }}>
+            <button style={estiloBotao}>
                     Enviar
             </button>
         </div>
