@@ -1,10 +1,17 @@
-.div-principal {
-    margin: auto;
-    width: 768px;
-    background-color: #EEE;
-    padding: 12px;
-    border-radius: 8px;
+.card {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: rgb(213, 207, 253);
+    border: 1px solid rgb(187, 177, 247);
+    border-radius: 4px;
 }
 
+.card .image {
+    width: 150px;
+    height: 100px;
+    margin: 15px;
+    background-color: aliceblue;
+}
 
 
